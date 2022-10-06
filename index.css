@@ -1,0 +1,44 @@
+#header img {
+    width: 80px;
+}
+#main .carousel-inner img {
+    max-height: 90vh;
+    object-fit: cover;
+}
+/*
+#main .carousel-inner img {
+    width: 600px;
+}
+*/
+#carousel {
+    position: relative;
+}
+#carousel .overlay {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+#next-event #eventos {
+    background-color: #f4537a;
+    color: white;
+}
+#next-event img {
+    max-width: 100%;
+}
+#tiendas a {
+    color: #f4537a;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+#footer {
+    background: #ffcb27;
+}
+#footer a {
+    color: black;
+}
