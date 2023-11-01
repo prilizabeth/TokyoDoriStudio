@@ -25,7 +25,7 @@ function finalPriceCalculation() {
     console.log(priceWithDiscount);
     console.log(finalPrice);
 
-    finalPriceText.textContent = `Total: $${finalPrice.toFixed(2)}`;
+    return finalPriceText.textContent = `Total: $${finalPrice.toFixed(2)}`;
 }
 
 function resetForm() {
