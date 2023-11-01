@@ -69,7 +69,7 @@
                   <h1>Bienvenido a la página de Tokyo Dori</h1>
                   <p>Ilustraciones de personajes originales, manga online, videojuegos (muy pronto) y tienda online.</p>
                   <a href="https://tokyodoristudio.empretienda.com.ar/" target="_blank" class="btn btn-outline-warning">Entrar a la tienda</a>
-                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalMensaje">Enviar un mensaje</button>
+                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalMensaje">Pedí tu comisión</button>
                 </div>
               </div>
             </div>
@@ -271,28 +271,76 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Dejanos tu mensaje</h5>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Comisión de Retrato</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form class="row">
-              <div class="form-label col">
-                <div class="input-group">
-                  <textarea class="form-control" aria-label="With textarea"></textarea>
-                </div>
+            <div class="container-fluid">
+              <div class="row">
+                  <div class="col">
+                      <p>Podés pedir comisiones de tu retrato, tené en cuenta que cada pedido tiene un tiempo distinto de entrega.</p>
+                  </div>
               </div>
-            </form>
-            <div class="alert alert-warning" role="alert">
-              Si no dejas ningún dato de contacto, no podremos responderte!
+              <div class="row">
+                  <div class="col text-center">
+                      <p class="fs-3 fw-semibold">VALOR DE COMISIÓN $2000</p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                      <div class="card p-2 text-center border-danger">
+                          <h5 class="card-title">Busto</h5>
+                          <br>
+                          <p class="card-text">30% descuento</p>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card p-2 text-center border-info">
+                          <h5 class="card-title">Medio <br>cuerpo</h5>
+                          <p class="card-text">20% descuento</p>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card p-2 text-center border-warning">
+                          <h5 class="card-title">Cuerpo entero</h5>
+                          <p class="card-text">Precio full</p>
+                      </div>
+                  </div>
+              </div>
+              <form class="row">
+                  <div class="col-12 my-3">
+                      <input type="text" class="form-control" placeholder="Nombre y apellido" aria-label="Nombre y apellido">
+                  </div>
+                  <div class="col-12 mb-3">
+                      <input type="text" class="form-control" id="form-email" placeholder="Email" aria-label="Email">
+                  </div>
+                  <div class="col-12 col-md-6 mb-3">
+                      <label class="visually-hidden" for="autoSizingSelect">Cantidad</label>
+                      <input type="number" class="form-control" id="quantity-tickets" placeholder="Cantidad" aria-label="Cantidad">
+                  </div>
+                  <div class="col-12 col-md-6 mb-3">
+                      <label class="visually-hidden" for="autoSizingSelect">Tipo de retrato</label>
+                      <select class="form-select" id="discount-choice">
+                          <option selected>Elegir</option>
+                          <option value="0.3">Busto</option>
+                          <option value="0.2">Medio cuerpo</option>
+                          <option value="0">Cuerpo entero</option>
+                      </select>
+                  </div>
+              </form>
+              <div class="alert alert-info" id="final-price" role="alert">
+                  Total: $
+              </div>
+              <div class="modal-footer">
+                  <button type="reset" class="btn btn-secondary" id="reset-button">Borrar</button>
+                  <button type="submit" class="btn btn-primary" id="confirm-button">Confirmar</button>
+              </div>
             </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Enviar</button>
           </div>
         </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
